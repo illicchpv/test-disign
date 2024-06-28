@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 
+    фигма :
+    https://www.figma.com/design/xhxfxFmnDEdFQjOrE6XV93/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%BE%D0%B8%CC%86?node-id=0-1&t=5vdIj147YkSm3xrl-0
+     -->
+    <style>
+        .row{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 30px;
+        }
+        .sz{
+            cursor: pointer;
+
+            span:hover{
+                color: red;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="button buttonGreen">
+                <div class="buttonRound">
+                    <div class="value">5</div>
+                </div>
+                <div class="data">01.01.2024</div>
+            </div>
+            <div class="sz">
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:50px';" >h:50</span>
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:100px';" >h:100</span>
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:150px';" >h:150</span>
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='';" >h:default</span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
