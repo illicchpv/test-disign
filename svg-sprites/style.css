@@ -1,0 +1,20 @@
+.icon {
+    --stop-color1: #BAFFD0;
+    --stop-color2: #7AF895;
+    /* --stop-color2: red; */
+    /* fill: red; */
+    /* fill: #53B75F; */
+    --fill: #53B75F;
+    /* --fill: red; */
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.icon:hover {
+    fill: green;
+}
+
+.stop-color2{
+    /* stop-color: "red"; */
+    stop-color:#7AF895;
+}

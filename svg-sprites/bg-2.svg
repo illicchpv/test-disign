@@ -1,10 +1,12 @@
-<svg width="535" height="535" viewBox="0 0 535 535" 
+<svg viewBox="0 0 535 535" 
 fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M242.16 404.87C324.29 404.87 390.87 338.29 390.87 256.16C390.87 174.03 324.29 107.45 242.16 107.45C160.03 107.45 93.4501 174.03 93.4501 256.16C93.4501 338.29 160.03 404.87 242.16 404.87Z" 
-fill="#53B75F"/>
+        fill="#53B75F"
+    />
     <g filter="url(#filter0_d_7_537)">
         <path d="M424.32 256.16C424.32 356.76 342.76 438.32 242.16 438.32C141.56 438.32 60 356.76 60 256.16C60 155.56 141.56 74 242.16 74C342.76 74 424.32 155.56 424.32 256.16ZM242.16 129.08C171.97 129.08 115.08 185.98 115.08 256.16C115.08 326.34 171.98 383.24 242.16 383.24C312.34 383.24 369.24 326.34 369.24 256.16C369.24 185.98 312.34 129.08 242.16 129.08Z" 
-        fill="url(#paint0_linear_7_537)"/>
+            fill="url(#paint0_linear_7_537)"
+        />
     </g>
     <defs>
         <filter id="filter0_d_7_537" x="0.469999" y="0.299999" width="534.4" height="534.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -18,10 +20,8 @@ fill="#53B75F"/>
         </filter>
         <linearGradient id="paint0_linear_7_537" x1="113.35" y1="384.97" x2="370.96" y2="127.36" 
             gradientUnits="userSpaceOnUse">
-            <stop 
-                stop-color="#BAFFD0"/>
-            <stop offset="0.77" 
-                stop-color="#7AF895"/>
+            <stop stop-color="#BAFFD0"/>
+            <stop offset="0.77" stop-color="#7AF895"/>
         </linearGradient>
     </defs>
 </svg>
