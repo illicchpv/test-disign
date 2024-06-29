@@ -7,13 +7,13 @@
     width: var(--w);
 
 
-    background-image: url(./bg-small-3.svg);
+    background-image: url(./bg-3-small.svg);
     background-size: cover;
 
     .buttonRound{
         height: var(--h);
         width: var(--h);
-        background-image: url(./bg-2.svg);
+        background-image: url(./bg-9.svg);
         background-size: contain;
 
         /* background-color: yellowgreen; */
