@@ -1,7 +1,5 @@
 <svg preserveAspectRatio="none" viewBox="0 0 764.64 482.4" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs/>
-	<path id="Vector" d="M113.39 0L651.25 0C713.87 0 764.64 50.76 764.64 113.39L764.64 369.01C764.64 431.63 713.87 482.4 651.25 482.4L113.39 482.4C50.76 482.4 0 431.63 0 369.01L0 113.39C0 50.76 50.76 0 113.39 0Z" fill="#53B75F" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Vector" d="M113.39 0L651.25 0C713.87 0 764.64 50.76 764.64 113.39L764.64 369.01C764.64 431.63 713.87 482.4 651.25 482.4L113.39 482.4C50.76 482.4 0 431.63 0 369.01L0 113.39C0 50.76 50.76 0 113.39 0Z" 
+        fill="#53B75F" fill-opacity="1.000000" fill-rule="evenodd"
+    />
 </svg>

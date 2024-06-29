@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .icon {
+        .icon, img {
             width: 100px;
             height: 100px;
         }
@@ -15,7 +15,59 @@
 
 <body>
 
-    <span>вижу 👉</span>
+    <img srcset="" src="./bg-3-small.svg" alt="">
+    <style type="text/css">
+        #bg-3-small .Vector {
+            fill: blue; fill-opacity: 0.3;
+            fill: #53B75F; fill-opacity: 1; fill-rule:"evenodd";
+        }
+    </style>
+    <svg class="icon"><use xlink:href="#bg-3-small"></use></svg>    
+    <hr>
+
+    <img srcset="" src="./bg-3.svg" alt="">
+    <style type="text/css">
+        #bg-3 .stop-color1 {
+            stop-color: #b76953;
+            stop-color: #53B75F;
+        }
+        #bg-3 .stop-color2 {
+            stop-color: #efc39f;
+            stop-color: #7AF895;
+        }
+    </style>
+    <svg class="icon"><use xlink:href="#bg-3"></use></svg>    
+    <hr>
+
+    <img srcset="" src="./bg-7.svg" alt="">
+    <style type="text/css">
+        #bg-7 .grid path {
+            stroke: blue; stroke-width: 3; stroke-miterlimit:10;
+            stroke: #53B75F; stroke-width: 3; stroke-miterlimit:10;
+        }
+    </style>
+    <svg class="icon"><use xlink:href="#bg-7"></use></svg>    
+    <hr>
+
+    <img srcset="" src="./bg-9.svg" alt="">
+    <style type="text/css">
+        #bg-9 .Vector {
+            fill: blue;
+            fill: #53B75F;
+        }
+        #bg-9 .stop-color1 {
+            stop-color: #b76953;
+            stop-color: #BAFFD0;
+        }
+        #bg-9 .stop-color2 {
+            stop-color: #efc39f;
+            stop-color: #7AF895;
+        }
+    </style>
+    <svg class="icon"><use xlink:href="#bg-9"></use></svg>    
+    <hr>
+
+    <!-- <span>вижу 👉</span>
     <svg class="icon" preserveAspectRatio="none" viewBox="0 0 766 484" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M652.05 0.97998H114.19C51.5664 0.97998 0.800049 51.7464 0.800049 114.37V369.99C0.800049 432.614 51.5664 483.38 114.19 483.38H652.05C714.674 483.38 765.44 432.614 765.44 369.99V114.37C765.44 51.7464 714.674 0.97998 652.05 0.97998Z" fill="url(#paint0_linear_1_12)" />
         <defs>
@@ -99,7 +151,26 @@
                 </linearGradient>
             </defs>
         </symbol>
-    </svg>
+    </svg> -->
+
+    <svg class="loadSprites" data-symbols_url="./alib.svg"></svg>
+    <script>
+        function loadSprites() {
+            document.querySelectorAll('svg.loadSprites').forEach(async (el) => {
+                const f = el.dataset.symbols_url;
+                if (f) {
+                    const r = await fetch(f);
+                    if (!r.ok) {
+                        console.error(`Error loadSymbols url:[${f}] status:${r.status} statusText:${r.statusText}`);
+                        return;
+                    }
+                    const h = await r.text();
+                    el.innerHTML = h;
+                }
+            });
+        }
+        loadSprites();
+    </script>
 
 </body>
 
