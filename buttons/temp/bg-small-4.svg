@@ -1,0 +1,24 @@
+<svg viewBox="0 0 534.4 534.4" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_6_dd" x="0.000000" y="0.000000" width="534.400146" height="534.400024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="25.51" dy="11.34"/>
+			<feGaussianBlur stdDeviation="28.3467"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.4 0 0 0 0 0.2 0 0 0 0.75 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<linearGradient x1="112.880005" y1="384.659973" x2="370.489990" y2="127.049988" id="paint_linear_1_6_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#BAFFD0"/>
+			<stop offset="0.770000" stop-color="#7AF895"/>
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_1_6_dd)">
+		<path id="Vector" d="M423.85 255.86C423.85 356.46 342.29 438.02 241.69 438.02C141.09 438.02 59.53 356.46 59.53 255.86C59.53 155.25 141.09 73.69 241.69 73.69C342.29 73.69 423.85 155.25 423.85 255.86ZM241.69 128.77C171.5 128.77 114.61 185.67 114.61 255.85C114.61 326.03 171.51 382.93 241.69 382.93C311.87 382.93 368.77 326.03 368.77 255.85C368.77 185.67 311.87 128.77 241.69 128.77Z" fill="url(#paint_linear_1_6_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

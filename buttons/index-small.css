@@ -1,0 +1,67 @@
+.buttonGreenSmall{
+    --k: calc( 764.64 / 482.4 );
+    --h: 200px;
+    --w: calc( var(--h) * var(--k) );
+
+    height: var(--h);
+    width: var(--w);
+
+
+    background-image: url(./bg-small-3.svg);
+    background-size: cover;
+
+    .buttonRound{
+        height: var(--h);
+        width: var(--h);
+        background-image: url(./bg-2.svg);
+        background-size: contain;
+
+        /* background-color: yellowgreen; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .value{
+        font-weight: 700;
+        font-size: 200px;
+        font-size: calc(var(--h) / 2.4);
+        color: #fff;
+        line-height: 1;
+        margin-top: -4%;
+        margin-left: -10%;
+        /* position: absolute; */
+    }
+
+    .data{
+        color: #fff;
+        font-weight: 700;
+        /* font-size: 94px; */
+        font-size: calc(var(--h) / 5.1);
+        line-height: 1;
+
+        width: 50%;
+        height: 100%;
+        padding-right: calc(20px / 2.4);
+        /* background-color: red; */
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: right;
+
+        span{
+            word-break: break-all;
+            text-wrap: balance;
+
+            text-shadow: -3px 3px 3px #474747;
+        }
+    }
+}
+
+/* viewBox="0 0 764.64 534.4" 
+
+
+*/

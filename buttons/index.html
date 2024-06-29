@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <link href="index.css" rel="stylesheet">
+    <link href="index-small.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +23,7 @@
             gap: 20px;
             font-size: 30px;
             flex-wrap: wrap;
+            margin-bottom: 10px;
         }
         .sz{
             cursor: pointer;
@@ -37,14 +39,35 @@
                 <div class="buttonRound">
                     <div class="value">5</div>
                 </div>
-                <div class="data">01.01.2024</div>
+                <div class="data">
+                    <span>01.01.2024</span>
+                </div>
             </div>
+            
             <div class="sz">
                 <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:50px';" >h:50</span>
                 <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:100px';" >h:100</span>
                 <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:150px';" >h:150</span>
                 <span onclick="this.closest('.row').querySelector('.button').style.cssText='';" >h:default</span>
             </div>
+        </div>
+
+        <div class="row">
+            <div class="button buttonGreenSmall">
+                <div class="buttonRound">
+                    <div class="value">5</div>
+                </div>
+                <div class="data">
+                    <span>01.01.2024&nbsp;</span>
+                </div>
+            </div>
+
+            <div class="sz">
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:50px';" >h:50</span>
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:100px';" >h:100</span>
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:150px';" >h:150</span>
+                <span onclick="this.closest('.row').querySelector('.button').style.cssText='';" >h:default</span>
+            </div>            
         </div>
     </div>
 

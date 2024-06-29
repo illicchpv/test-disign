@@ -15,31 +15,32 @@ body{
     /* background-color: bisque; */
 }
 
+.button{
+    position: relative;
+    cursor: pointer;
+    outline: 1px solid transparent;
+    outline-offset: 5px;
+    border-radius: 17%;
+    transition: outline .3s;
+
+    &:hover{
+        outline: 1px solid lightgreen;
+        /* transition: outline .3s; */
+    }
+}
+
 
 .buttonGreen{
-    --h: 482.4px;
-    --k: calc( 767 / 535 );
 
-    /* background-color: lightcyan; */
+    --k: calc( 764.64 / 482.4 );
+    --h: 200px;
+    --w: calc( var(--h) * var(--k) );
+
     height: var(--h);
-    width: calc(var(--h) * var(--k));
-    position: relative;
-
-    /* background-image: url(./br_green.svg); */
-    /* background-image: url(./bg-3.svg); */
-    /* background-image: url(./bg-2.svg); */
-    /* background-image: url(./bg-2.svg), url(./bg-7.svg), url(./bg-3.svg); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center left; */
-    /* background-size: contain; */
-    /* background-size: 50%, cover, cover; */
-    /* background-size: calc(var(--h) * var(--k)) var(--h); */
-    /* 766 484 */
+    width: var(--w);
 
     background-image: url(./bg-7.svg), url(./bg-3.svg);
     background-size: contain;
-
-    cursor: pointer;
 
     .buttonRound{
         height: var(--h);
@@ -65,15 +66,15 @@ body{
     }
 
     .data{
-        font-weight: 700;
-        font-size: 60px;
-        font-size: calc(var(--h) / 8);
         color: #fff;
+        font-weight: 700;
+        /* font-size: 60px; */
+        font-size: calc(var(--h) / 8);
         position: absolute;
+
         bottom: calc(var(--h) / 8);
         right: calc(var(--h) / 20);
 
         text-shadow: -3px 3px 3px #474747;
     }
 }
-
