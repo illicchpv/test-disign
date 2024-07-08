@@ -1,0 +1,80 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container{
+    max-width: 1224px;
+    margin: 0 auto;
+
+    /* background-color: bisque; */
+}
+
+.button{
+    position: relative;
+    cursor: pointer;
+    outline: 1px solid transparent;
+    outline-offset: 5px;
+    border-radius: 17%;
+    transition: outline .3s;
+
+    &:hover{
+        outline: 1px solid lightgreen;
+        /* transition: outline .3s; */
+    }
+}
+
+
+.buttonGreen{
+
+    --k: calc( 764.64 / 482.4 );
+    --h: 200px;
+    --w: calc( var(--h) * var(--k) );
+
+    height: var(--h);
+    width: var(--w);
+
+    background-image: url(./bg-7.svg), url(./bg-3.svg);
+    background-size: contain;
+
+    .buttonRound{
+        height: var(--h);
+        width: var(--h);
+        background-image: url(./bg-9.svg);
+        background-size: contain;
+
+        /* background-color: yellowgreen; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .value{
+        font-weight: 700;
+        font-size: 200px;
+        font-size: calc(var(--h) / 2.4);
+        color: #fff;
+        line-height: 1;
+        margin-top: -4%;
+        margin-left: -10%;
+        /* position: absolute; */
+    }
+
+    .data{
+        color: #fff;
+        font-weight: 700;
+        /* font-size: 60px; */
+        font-size: calc(var(--h) / 8);
+        position: absolute;
+
+        bottom: calc(var(--h) / 8);
+        right: calc(var(--h) / 20);
+
+        text-shadow: -3px 3px 3px #474747;
+    }
+}
