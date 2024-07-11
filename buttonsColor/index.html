@@ -2,78 +2,252 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link href="index.css" rel="stylesheet">
-    <link href="index-small.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <!-- <link href="index-small.css" rel="stylesheet"> -->
 </head>
 
 <body>
 
-    <!-- 
-    фигма :
-    https://www.figma.com/design/xhxfxFmnDEdFQjOrE6XV93/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%BE%D0%B8%CC%86?node-id=0-1&t=5vdIj147YkSm3xrl-0
+  <style>
+    .gradient__brand-secondary {
+      stop-color: var(--color-brand-secondary);
+    }
+
+    .gradient__brand {
+      stop-color: var(--color-brand);
+    }
+  </style>
+
+  <div style="
+  --color-brand: #3023ae;
+  --color-brand-secondary: #c86dd7;
+    ">
+    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient">
+        <stop class="gradient__brand-secondary" offset="0" />
+        <stop class="gradient__brand" offset="100%" />
+      </linearGradient>
+      <circle fill="url(#gradient)" cx="36" cy="36" r="20" />
+    </svg>
+  </div>
+
+  <div style="
+  --color-brand: red;
+  --color-brand-secondary: white;
+    ">
+    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient2">
+        <stop class="gradient__brand-secondary" offset="0" />
+        <stop class="gradient__brand" offset="100%" />
+      </linearGradient>
+      <circle fill="url(#gradient2)" cx="36" cy="36" r="20" />
+    </svg>
+  </div>
+
+
+
+
+  <!-- Вывод иконок -->
+  <!-- <svg class="inline-svg-icon browser" style="--star-fill: #f3eb04;">
+    <use xlink:href="#browser"></use>
+  </svg>
+  <svg class="inline-svg-icon browser" style="
+    --star-fill: red;
+    --dot-left: #f6214e;
+    --dot-center: #2153f6;
+    --dot-right: #53f621;
+    --stop-color1: #7AF895;
+   ">
+    <use xlink:href="#browser"></use>
+  </svg> -->
+  <!-- Вывод иконок -->
+  <!-- <br> -->
+
+  <!-- <svg id="c1" class="inline-svg-icon browser" style="--star-fill: #f3eb04;">
+    <use xlink:href="#circle"></use>
+  </svg>
+  <svg id="c2" class="inline-svg-icon browser" style="--star-fill: #f3eb04;">
+    <use xlink:href="#circle"></use>
+  </svg>
+  <script>
+    const stops = document.querySelectorAll('#stop1')
+    console.log('stops: ', stops);
+  </script> -->
+  <button onclick="
+    // document.getElementById('stop1').attributes['stop-color'].value = 'red';
+    const stop = document.querySelectorAll('#lg1 stop')
+    console.log('stop: ', stop);
+    stop[1].attributes['stop-color'].value = 'red';
+
+  ">Button</button>
+
+  <svg viewBox="0 0 100 100" width="100">
+    <defs>
+      <linearGradient id="lg1" gradientUnits="userSpaceOnUse">
+        <stop id="stop1" offset="0" stop-color="#3bf4cf" />
+        <stop id="stop2" offset="1" stop-color="#3bf4cf" stop-opacity="0.2" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="100" height="100" fill="url(#lg1)" />
+  </svg>
+  <svg viewBox="0 0 100 100" width="100">
+    <defs>
+      <linearGradient id="lg2" gradientUnits="userSpaceOnUse">
+        <stop id="stop21" offset="0" stop-color="#3bf4cf" />
+        <stop id="stop22" offset="1" stop-color="#3bf4cf" stop-opacity="0.2" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="100" height="100" fill="url(#lg2)" />
+  </svg>
+  <script>
+    // const stop = document.querySelectorAll('#stop11')
+    // console.log('stops: ', stop);
+    // stop.attributes['stop-color'].value = "red"
+
+  </script>
+
+  <!-- SVG-sprite #BAAFFE -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="circle" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="50" fill="url(#paint0_linear_7_3)" />
+      <defs>
+        <linearGradient id="paint0_linear_7_3" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+          <stop id="stop1" stop-color="#BAAFFE" />
+          <stop offset="1" stop-color="#030304" />
+        </linearGradient>
+      </defs>
+    </symbol>
+
+    <symbol id="cloud" viewBox="0 0 64 64">
+      <path id="cloud" d="M48.147892,18.941c-1.2983971,0-2.5535965,0.1753006-3.7612991,0.4729996
+         C40.9443932,15.4881001,35.9338951,13,30.3371944,13c-8.1797009,0-15.119194,5.2947998-17.6996002,12.6723003
+         c-0.0374994-0.0002995-0.0735941-0.0056-0.1110992-0.0056C5.608295,25.6667004,0,31.3377991,0,38.3334007
+         C0,45.3288994,5.608295,51,12.526495,51c3.0087996,0,32.4916,0,35.6213989,0C56.9027939,51,64,43.8232994,64,34.9705009
+         C64,26.1175995,56.9027939,18.941,48.147892,18.941z M48.147892,48.9006004H12.526495
+         c-5.749495,0-10.4271002-4.7404022-10.4271002-10.5671997c0-5.8087006,4.6484995-10.5377998,10.3733997-10.5672016
+         c0.0489006,0.0031013,0.0979004,0.0051003,0.1476002,0.0055008l1.5026999,0.0123005l0.4962006-1.4185009
+         c2.3568993-6.7385998,8.673399-11.2660999,15.7178993-11.2660999c4.7499981,0,9.2954998,2.0771008,12.4708042,5.6987
+         l0.8415947,0.9598999l1.2396011-0.3055992c1.1086998-0.2733994,2.205101-0.4120007,3.2586975-0.4120007
+         c7.5833015,0,13.7527008,6.2490005,13.7527008,13.9301014S55.7311935,48.9006004,48.147892,48.9006004z" />
+    </symbol>
+
+    <symbol id="cloud-computing" viewBox="0 0 64 64">
+      <g id="Refresh_1_">
+        <path d="M48.7919998,22.6142502c-0.4766006,0-0.9570999,0.0224991-1.4336014,0.0664005
+           c-2.7841988-7.0195007-9.6025848-11.6797009-17.2167988-11.6797009c-9.6581993,0-17.5868988,7.3096008-18.4403992,16.8076
+           C5.1699009,28.2822495,0.0010008,33.7431488,0.0010008,40.3867493c0,6.9550018,5.6629996,12.6123009,12.6240005,12.6123009
+           h36.1669998c8.3857002,0,15.2070007-6.8154984,15.2070007-15.1924019
+           C63.9990005,29.4296494,57.1777,22.6142502,48.7919998,22.6142502z M48.7919998,51.0009499H12.625001
+           c-5.8594003,0-10.6260004-4.7616997-10.6260004-10.6142006c0-5.8516006,4.7665997-10.6132984,10.6406002-10.6132984
+           c0.5362139,0,0.9765997-0.4229012,0.9990997-0.9580002c0.3603001-8.8691998,7.6093006-15.8164005,16.5028992-15.8164005
+           c7.0342159,0,13.3076,4.4589996,15.6093998,11.0946999c0.1581993,0.4550991,0.6268997,0.7313995,1.089817,0.6620998
+           c0.6444817-0.0946999,1.3007812-0.1434994,1.9511833-0.1434994c7.2831993,0,13.2089996,5.9188995,13.2089996,13.1942978
+           S56.0751991,51.0009499,48.7919998,51.0009499z" />
+        <path fill="currentColor" d="M32.4968147,25.40415l0.7804871-0.6707001c0.4189987-0.3603992,0.4667969-0.9913006,0.1075134-1.4102001
+           c-0.3604164-0.419899-0.9922142-0.4657993-1.4102154-0.107399l-2.8262005,2.4277
+           c-0.4188995,0.3603992-0.4667988,0.9911995-0.107399,1.4101982l2.4277,2.8271008
+           c0.1982994,0.2304993,0.4776001,0.3486004,0.7588005,0.3486004c0.2314987,0,0.4628983-0.0790997,0.6513977-0.2411995
+           c0.4189148-0.3603001,0.4668007-0.9912014,0.1074028-1.4101009l-1.0659008-1.2411003
+           c3.7255001,0.3786011,6.6420994,3.5335007,6.6420994,7.3573017c0,4.0780983-3.3174019,7.3964996-7.3955002,7.3964996
+           s-7.3955002-3.3184013-7.3955002-7.3964996c0-0.5527-0.4473-1-1-1c-0.5527992,0-1,0.4473-1,1
+           c0,5.1815987,4.2147999,9.3964996,9.3955002,9.3964996c5.1805992,0,9.3955002-4.214901,9.3955002-9.3964996
+           C40.5625,29.9661503,37.0483017,26.0535507,32.4968147,25.40415z" />
+      </g>
+    </symbol>
+
+    <symbol id="browser" viewBox="0 0 64 64">
+      <g>
+        <path fill="var(--star-fill)" d="M25.0956993,39.8096008L24.2402,46.8065987c-0.0429993,0.3487015,0.1074009,0.6944008,0.392601,0.9014015
+   c0.1679993,0.1221008,0.3680992,0.1846008,0.5692997,0.1846008c0.1386986,0,0.2793121-0.0293007,0.4091988-0.089901L32,44.8261986
+   L38.3895988,47.8027c0.3194008,0.1474991,0.6944008,0.1114006,0.9785004-0.0946999
+   c0.285202-0.2070007,0.4356003-0.5527,0.392601-0.9023018l-0.8563995-6.9960976l4.8046989-5.157299
+   c0.1669006-0.1787033,0.2597008-0.4150009,0.2597008-0.6601028c0-0.7987976,0-0.7987976-4.4648018-1.6689987L36.2666016,31.6924
+   l-3.4190025-6.1620998C32.6767006,25.2217007,32.3525009,25.0312004,32,25.0312004
+   c-0.3525887,0-0.6767998,0.1905003-0.8477001,0.4990997L27.7334118,31.6924l-6.9190006,1.3486004
+   c-0.3457108,0.0673981-0.6269112,0.3163986-0.736311,0.6514015c-0.1084003,0.3348999-0.0272999,0.7030983,0.2129002,0.9598999
+   L25.0956993,39.8096008z M28.5468006,33.5088005c0.2803001-0.0546989,0.5234985-0.2304993,0.662199-0.4814987L32,27.9971008
+   l2.7900009,5.030201c0.1386986,0.2509995,0.3817978,0.4267998,0.6620979,0.4814987c0,0,3.4756012,0.6767006,5.6485023,1.1006012
+   l-3.9219017,4.2098999c-0.1952858,0.2089996-0.2881012,0.4941978-0.2528992,0.7783966L37.625,45.3075981l-5.2158012-2.4296989
+   C32.2793007,42.8184013,32.1395988,42.7881012,32,42.7881012c-0.1396999,0-0.2793007,0.0303001-0.4092007,0.089798
+   l-5.2148991,2.4296989l0.6982994-5.7108994c0.0351009-0.2831993-0.0576-0.5683975-0.2528992-0.7773972l-3.9218884-4.2098999
+   L28.5468006,33.5088005z" />
+        <path d="M60,5h-56C1.7908008,5,0.0000008,6.7908001,0.0000008,9v5v2v39c0,2.2090988,1.7908,4,3.9999998,4h56
+   c2.2090988,0,4-1.7909012,4-4V16v-2V9C64,6.7908001,62.2090988,5,60,5z M62,55c0,1.1027985-0.8972015,2-2,2h-56
+   c-1.1027997,0-1.9999998-0.8972015-1.9999998-2V16h60V55z M62,14h-60V9c0-1.1027999,0.8972001-2,1.9999998-2h56
+   c1.1027985,0,2,0.8972001,2,2V14z" />
+        <path fill="var(--dot-left)" d="M6.0000005,9c-0.9649997,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7850003,1.75,1.75,1.75c0.9649,0,1.75-0.7851,1.75-1.75
+   C7.7500005,9.7849998,6.9649005,9,6.0000005,9z M6.0000005,11.5c-0.4141998,0-0.75-0.3358002-0.75-0.75s0.3358002-0.75,0.75-0.75
+   c0.4142003,0,0.75,0.3358002,0.75,0.75S6.4142008,11.5,6.0000005,11.5z" />
+        <path fill="var(--dot-right)" d="M16,9c-0.9649992,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7850008,1.75,1.75,1.75c0.964901,0,1.75-0.7851,1.75-1.75
+   C17.75,9.7849998,16.964901,9,16,9z M16,11.5c-0.4141998,0-0.75-0.3358002-0.75-0.75S15.5858002,10,16,10s0.75,0.3358002,0.75,0.75
+   S16.4141998,11.5,16,11.5z" />
+        <path fill="var(--dot-center)" d="M11.000001,9c-0.9650002,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7849998,1.75,1.75,1.75c0.9649,0,1.75-0.7851,1.75-1.75
+   C12.750001,9.7849998,11.964901,9,11.000001,9z M11.000001,11.5c-0.4142008,0-0.75-0.3358002-0.75-0.75s0.3357992-0.75,0.75-0.75
+   c0.4141998,0,0.75,0.3358002,0.75,0.75S11.4142008,11.5,11.000001,11.5z" />
+      </g>
+    </symbol>
+  </svg>
+  <!-- SVG-sprite  -->
+
+
+  <!-- 
+    figma :
+    https://www.figma.com/design/1Q5csp5rTtLBy8uOV8o3EU/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%BE%D0%B8%CC%86?node-id=0-1&t=Otss5EGXNnkPp9zT-0
+
+    // https://www.figma.com/design/xhxfxFmnDEdFQjOrE6XV93/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%BE%D0%B8%CC%86?node-id=0-1&t=5vdIj147YkSm3xrl-0
+
+    stop-color1" offset="0.32" stop-color="#53B75F"
+
+    http://dreamhelg.ru/2017/02/symbol-svg-sprite-detail-guide/
+
      -->
-    <style>
-        .row{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            font-size: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
-        .sz{
-            cursor: pointer;
 
-            span:hover{
-                color: red;
-            }
-        }
-    </style>
+  <!-- <div class="container">
+    <div class="row">
 
-    <div class="container">
-        <div class="row">
-            
-            <div class="button buttonGreen">
-                <div class="buttonRound">
-                    <div class="value">5</div>
-                </div>
-                <div class="data">
-                    <span>01.01.2024</span>
-                </div>
-            </div>
-            
-            <div class="sz">
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:50px';" >h:50</span>
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:100px';" >h:100</span>
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:150px';" >h:150</span>
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='';" >h:default</span>
-            </div>
-        </div>
+      <div class="btn" style="--h: 100px">
+        <svg class="bg">
+          <use xlink:href="#bg-3"></use>
+        </svg>
+      </div>
 
-        <div class="row">
-            <div class="button buttonGreenSmall">
-                <div class="buttonRound">
-                    <div class="value">5</div>
-                </div>
-                <div class="data">
-                    <span>01.01.2024&nbsp;</span>
-                </div>
-            </div>
+    </div>
 
-            <div class="sz">
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:50px';" >h:50</span>
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:100px';" >h:100</span>
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='--h:150px';" >h:150</span>
-                <span onclick="this.closest('.row').querySelector('.button').style.cssText='';" >h:default</span>
-            </div>            
-        </div>
+    <div class="row">
+
+      <div class="btn" style="--h: 200px">
+        <svg class="bg">
+          <use xlink:href="#bg-3"></use>
+        </svg>
+      </div>
+
     </div>
 
 
+  </div> -->
+
+  <!-- <svg class="loadSprites" data-symbols_url="./alib.svg"></svg>
+  <script>
+    function loadSprites() {
+      document.querySelectorAll('svg.loadSprites').forEach(async (el) => {
+        const f = el.dataset.symbols_url;
+        if (f) {
+          const r = await fetch(f);
+          if (!r.ok) {
+            console.error(`Error loadSymbols url:[${f}] status:${r.status} statusText:${r.statusText}`);
+            return;
+          }
+          const h = await r.text();
+          el.innerHTML = h;
+        }
+      });
+    }
+    loadSprites();
+  </script> -->
 </body>
 
 </html>
