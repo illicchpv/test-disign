@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+  width: 3224px;
+  margin: 0 auto;
+
+  background-color: bisque;
+
+  h1{
+    background-color: red;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 60px;
+  }
+}
+
+
+.row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  flex-shrink: 0;
+  text-align: center;
+
+  span{
+    width: 150px;
+    text-align: center;
+  }
+}
+
+.abtn {
+  --k: calc( 685 / 432 );
+  --h: 432px;
+  --w: calc( var(--h) * var(--k) );
+  --r: calc((var(--h) * 97)/432);
+  position: relative;
+  cursor: pointer;
+
+  width: var(--w);
+  height: var(--h);
+  border-radius: var(--r);
+  box-shadow: 15px 15px 51px 0 #98c4ff;
+  background-color: #B5D4FF;
+  background-image: url(./big01Ok.svg);
+  background-size: cover;
+  transition: transform .2s, box-shadow .2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(1);
+    box-shadow: 15px 15px 51px 0 transparent;
+    transform: translate(3px, 3px);
+  }
+
+  .num{
+    font-weight: 700;
+    /* font-size: 200px; */
+    font-size: calc(var(--h) / 2.35);
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 2px 22px 0 #1f7a2a;
+    text-shadow: 0 2px 22px 0 #1f7a2a;
+    text-shadow: 0 2px 22px 0 #d41627;
+    text-shadow: 0 2px 22px 0 #505153;
+          
+    position: absolute;
+    top: 54%;
+    left: 33%;
+    /* left: calc(-1em + var(--w) / 2); */
+    transform: translate(-50%, -60%);
+  }
+
+  .data{
+    color: #fff;
+    font-weight: 700;
+    /* font-size: 94px; */
+    font-size: calc(var(--h) / 9);
+    line-height: 1;
+    text-shadow: 0 2px 17px 0 #1f7a2a;
+    text-shadow: 0 2px 17px 0 #1f7a2a;
+    text-shadow: 0 2px 17px 0 #d41627;
+    text-shadow: 0 2px 17px 0 #505153;
+
+    position: absolute;
+    bottom: 13%;
+    left: 60%;    
+  }
+
+}
+
+.abtn_ok{
+  background-image: url(./big01Ok.svg);
+
+  .num{
+    text-shadow: 0 2px 22px 0 #1f7a2a;
+  }
+}
+.abtn_alarm{
+  background-image: url(./big02Alarm.svg);
+
+  .num{
+    text-shadow: 0 2px 22px 0 #1f7a2a;
+  }
+}
+.abtn_alert{
+  background-image: url(./big03Alert.svg);
+
+  .num{
+    text-shadow: 0 2px 22px 0 #d41627;
+  }
+}
+.abtn_disabled{
+  background-image: url(./big04Disabled.svg);
+  pointer-events: none;
+
+  .num{
+    text-shadow: 0 2px 22px 0 #505153;
+  }
+}
