@@ -51,7 +51,7 @@ function createBlokButtons(contentBlockEl, contentLoadingEl, json,
   clickCb
 ) {
   const template = '\
-    <button id="abtn_${id}" class="abtn abtn_${type}">\
+    <button id="abtn_${id}" class="abtn abtn_${type}" title="состояние: ${type}">>\
       <div class="num">${num}</div>\
       <span class="date">${date}&nbsp;</span>\
     </button>\
@@ -78,7 +78,7 @@ function createBlokButtons(contentBlockEl, contentLoadingEl, json,
     },
     setType(id, val) { // "num", "date", "type"
       if (types.findIndex(e => e === val) < 0) {
-        console.error(`Error setType -- unknown type: ${val}`);
+        console.error(`Error setType -- unknown type: ${val} ["ok", "alarm", "alert", "disabled"]`);
         return;
       }
       const el$ = root.querySelector(`#abtn_${id}`);
