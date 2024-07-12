@@ -51,7 +51,7 @@ function createBlokButtons(contentBlockEl, contentLoadingEl, json,
   clickCb
 ) {
   const template = '\
-    <button id="abtn_${id}" class="abtn abtn_${type}" title="состояние: ${type}">>\
+    <button id="abtn_${id}" class="abtn abtn_${type}" title="состояние: ${type}">\
       <div class="num">${num}</div>\
       <span class="date">${date}&nbsp;</span>\
     </button>\
