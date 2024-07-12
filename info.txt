@@ -18,3 +18,17 @@ func создания внутренних структур
 	по нажатию я буду вызывать calback()
 
 
+figma:
+https://www.figma.com/design/G8C6WFUPAVuR1FxgOZvz4Z/Untitled-(Copy)?node-id=24-6&t=poGVLgC6AskZoPjt-0
+// https://www.figma.com/design/1Q5csp5rTtLBy8uOV8o3EU/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%BE%D0%B8%CC%86?node-id=0-1&t=Otss5EGXNnkPp9zT-0
+// https://www.figma.com/design/xhxfxFmnDEdFQjOrE6XV93/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%81-%D0%B4%D0%B0%D1%82%D0%BE%D0%B8%CC%86?node-id=0-1&t=5vdIj147YkSm3xrl-0    
+
+github:      
+https://github.com/illicchpv/test-disign
+
+pages:      
+https://illicchpv.github.io/test-disign
+https://illicchpv.github.io/test-disign/buttons/
+https://illicchpv.github.io/test-disign/buttons/testSprites.html
+https://illicchpv.github.io/test-disign/btns/
+https://illicchpv.github.io/test-disign/btns/pg-rost.html
