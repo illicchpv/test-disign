@@ -1,3 +1,7 @@
+моя копия дизайна
+https://www.figma.com/design/G8C6WFUPAVuR1FxgOZvz4Z/Untitled-(Copy)?node-id=0-1&t=poGVLgC6AskZoPjt-0
+
+
 номер блока - 5 при создании
 id 	
 общий class - bl
