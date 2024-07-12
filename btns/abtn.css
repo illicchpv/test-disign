@@ -5,6 +5,8 @@
   --r: calc((var(--h) * 97)/432);
   position: relative;
   cursor: pointer;
+  outline: none;
+  border: none;  
 
   /* outline: 1px solid black; */
 
@@ -39,12 +41,12 @@
           
     position: absolute;
     top: 54%;
-    left: 33%;
+    left: 32%;
     /* left: calc(-1em + var(--w) / 2); */
     transform: translate(-50%, -60%);
   }
 
-  .data{
+  .data, .date{
     text-align: left;
     color: #fff;
     font-weight: 700;

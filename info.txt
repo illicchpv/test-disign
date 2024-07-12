@@ -6,11 +6,11 @@ https://www.figma.com/design/G8C6WFUPAVuR1FxgOZvz4Z/Untitled-(Copy)?node-id=0-1&
 id 	
 общий class - bl
 
-состояние - 1 2 3 4
-	норм - зел
-	возм ошибка - желт круг
-	подтвержд ошибка
-	отсутствие данных
+состояние - [ok alarm alert disabled]
+	ok - норм - зел
+	alarm - возм ошибка - желт круг
+	alert -подтвержд ошибка
+	disabled - отсутствие данных
 дата 	
 	
 func создания внутренних структур
@@ -32,3 +32,37 @@ https://illicchpv.github.io/test-disign/buttons/
 https://illicchpv.github.io/test-disign/buttons/testSprites.html
 https://illicchpv.github.io/test-disign/btns/
 https://illicchpv.github.io/test-disign/btns/pg-rost.html
+
+
+
+-----------------------------
+1920x1080
+
+2300x1464
+
+ИНДИРА
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 40px;
+color: #003274;
+
+[width: 300px; height: 64px; ИНДИРА][							width: 2000px; height: 64px;]
+{
+width: 300px;
+height: 1400px;
+
+}
+	
+	56						
+78 	Ростовская АЭС							
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 86px;
+		color: #003274;							
+	48
+	
+90	[] 76 	[]
+	95
+	
+	[] 		[]
+	
