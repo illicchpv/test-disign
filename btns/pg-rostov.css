@@ -24,7 +24,7 @@ body {
 
 .wrapper {
   /* --ksz: calc(1920 / 2300); */
-  --ksz: 0.65;
+  --ksz: 0.60;
   --th: 64px;
   --wh: 300px;
   --h: calc(15px + var(--ksz) * 432px);
@@ -94,6 +94,7 @@ body {
     gap: calc(var(--ksz) * 95px) calc(var(--ksz) * 76px);
     /* h w */
 
+    
   }
 
   .loading{
