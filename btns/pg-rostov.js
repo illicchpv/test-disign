@@ -24,6 +24,8 @@ const contentBlock$ = document.querySelector('.contentBlock');
 const contentLoading$ = document.querySelector('.content .loading');
 
 // ------------------
+loadTestData();
+
 function loadTestData() {
   const blockButtons = createBlokButtons(contentBlock$, contentLoading$, testJson,
     (e, id) => {
@@ -45,6 +47,11 @@ function loadTestData() {
   const date14 = blockButtons.getDate("14");
   console.log('date14: ', date14);
   blockButtons.setDate("14", "02.02.2024");
+
+  // blockButtons.setButtonsWidth(50);
+  blockButtons.setButtonsHeight(150);
+  blockButtons.setKSZ(0.3);
+  blockButtons.setColumnCount(3);
 }
 
 function createBlokButtons(contentBlockEl, contentLoadingEl, json,
@@ -67,7 +74,43 @@ function createBlokButtons(contentBlockEl, contentLoadingEl, json,
   }
   contentLoadingEl.style.display = 'none';
 
+  function getClearRootStyle(v) {
+    if (!root.style.cssText) return '';
+    const sArr = root.style.cssText.split(';');
+    const sArr2 = sArr.filter(e => e.indexOf(v) < 0 && e.length > 0);
+    return sArr2.join(';') + ';';
+  }
+
   return {
+    kWidthHeight: (685 / 432),
+
+    setButtonsWidth(v) {
+      const hVar = v * this.kWidthHeight;
+      const styleText = getClearRootStyle('--h:') + `--h:${hVar}px;`;
+      root.style.cssText = styleText;
+    },
+    setButtonsHeight(v) {
+      const hVar = v;
+      const styleText = getClearRootStyle('--h:') + `--h:${hVar}px;`;
+      console.log('styleText: ', styleText);
+      root.style.cssText = styleText;
+    },
+
+    setKSZ(v) {
+      const styleText = getClearRootStyle('--ksz:') + `--ksz:${v};`;
+      console.log('styleText: ', styleText);
+      root.style.cssText = styleText;
+    },
+
+    setColumnCount(v) {
+      if(!v || v < 1) {
+        console.error('Error setColumnCount -- v < 1'); return;
+      }
+      let st = "grid-template-columns:";
+      for (let i = 0; i < v; i++) st += "auto ";
+      const styleText = getClearRootStyle('grid-template-columns:') + st;
+      root.style.cssText = styleText;
+    },
 
     getType(id) { // "num", "date", "type"
       const el$ = root.querySelector(`#abtn_${id}`);

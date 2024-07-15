@@ -27,7 +27,8 @@ body {
   --ksz: 0.60;
   --th: 64px;
   --wh: 300px;
-  --h: calc(15px + var(--ksz) * 432px);
+
+  --h: calc(var(--ksz) * 432px);
   /* --h: 200px; */
 
   display: grid;
@@ -94,7 +95,6 @@ body {
     gap: calc(var(--ksz) * 95px) calc(var(--ksz) * 76px);
     /* h w */
 
-    
   }
 
   .loading{
@@ -103,7 +103,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: burlywood; */
   }
 
 }
