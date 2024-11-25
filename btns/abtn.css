@@ -72,6 +72,13 @@
     text-shadow: 0 2px 22px #1f7a2a;
   }
 }
+.abtn_warning{
+  background-image: url(./big05Warning.svg);
+
+  .num{
+    text-shadow: 0 2px 22px #1f7a2a;
+  }
+}
 .abtn_alarm{
   background-image: url(./big02Alarm.svg);
 

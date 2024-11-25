@@ -15,10 +15,11 @@ const templFill = (templ, p) => {
 };
 
 const testJson = [
+  {id: 18, type: "ok", num: 4, date: "01.01.2024"},
+  {id: 20, type: "warning", num: 5, date: "17.01.2024"},
   {id: 12, type: "alarm", num: 1, date: "01.01.2024"},
   {id: 14, type: "alert", num: 2, date: "01.01.2024"},
   {id: 16, type: "disabled", num: 3, date: "01.01.2024"},
-  {id: 18, type: "ok", num: 4, date: "01.01.2024"},
 ];
 const contentBlock$ = document.querySelector('.contentBlock');
 const contentLoading$ = document.querySelector('.content .loading');
@@ -47,6 +48,10 @@ function loadTestData() {
   const date14 = blockButtons.getDate("14");
   console.log('date14: ', date14);
   blockButtons.setDate("14", "02.02.2024");
+
+  const date20 = blockButtons.getDate("20");
+  console.log('date20: ', date20);
+  blockButtons.setDate("20", "21.02.2024");
 
   // blockButtons.setButtonsWidth(50);
   blockButtons.setButtonsHeight(150);
